@@ -1,9 +1,20 @@
 # Docker_command
 
 ## Build Image
-`docker build -t gpu-status-app .` 
+`docker build -t <image_name>:<image_label> .` 
 </br>
->- 
+>- `-t`: asign the tag of this image
+>- `<image_name>`: name of this image
+>- `<image_label>`: version, default = 'latest'
+>- `.`: current folder
+
+## Container
+>- Run(build)
+`docker run --name <container_name> -p port_1:port_2 <image name>:<image_label>`
+
+>- Run existing container
+`docker start <container_name>`
+
 ## Network
 >- List all network: </br>
 `docker network ls` </br>
