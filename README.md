@@ -1,4 +1,4 @@
-# Docker_command
+# Docker Command Reference
 
 ## Build Image
 `docker build -t <image_name>:<image_label> .` 
@@ -6,10 +6,10 @@
 >- `-t`: asign the tag of this image
 >- `<image_name>`: name of this image
 >- `<image_label>`: version, default = 'latest'
->- `.`: current folder
+>- `.`: current folder of Dockerfile
 
-## Container
->- Run(build) a container
+## Manage Container
+>- Run(create and start) a container
 `docker run --gpus all --name <container_name> --net <network_name> -p port_1:port_2 <image name>:<image_label>`
 >- `--gpus all`: available GPU usage
 >- `--name`: name of this container
@@ -23,9 +23,17 @@
 ## Network
 >- List all network: </br>
 `docker network ls` </br>
->- Create new network: </br>
+>- Create a new network: </br>
 `docker network create <network_name>` </br>
->- Dekete exist network: </br>
+>- Dekete an existing network: </br>
 `docker network rm <network_name>` </br>
 >- Check detail of a network: </br>
 `docker network inspect <network_name>` </br>
+
+## Clean up
+>- Remove a container: </br>
+`docker rm <container_name>`
+>- Remove an image: </br>
+`docker rmi <image_name>:<image_label>`
+>- Remove all unused resources: </br>
+`docker system prune`
