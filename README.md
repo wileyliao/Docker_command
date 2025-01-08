@@ -9,11 +9,16 @@
 >- `.`: current folder
 
 ## Container
->- Run(build)
-`docker run --name <container_name> -p port_1:port_2 <image name>:<image_label>`
+>- Run(build) a container
+`docker run --gpus all --name <container_name> --net <network_name> -p port_1:port_2 <image name>:<image_label>`
+>- `--gpus all`: available GPU usage
+>- `--name`: name of this container
+>- `--net`: adding this container to an existing network
+>- `-p port_1:port_2`: Network port mapping(port_1 -> Host, port_2 -> Container)
 
->- Run existing container
+>- Start/Stop existing container
 `docker start <container_name>`
+`docker stop <container_name>`
 
 ## Network
 >- List all network: </br>
