@@ -16,8 +16,8 @@
 >- `--net`: adding this container to an existing network
 >- `-p port_1:port_2`: Network port mapping(port_1 -> Host, port_2 -> Container)
 
->- Start/Stop existing container
-`docker start <container_name>`
+>- Start/Stop existing container </br>
+`docker start <container_name>` </br>
 `docker stop <container_name>`
 
 ## Network
