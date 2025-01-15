@@ -25,7 +25,7 @@
 `docker network ls` </br>
 >- Create a new network: </br>
 `docker network create <network_name>` </br>
->- Dekete an existing network: </br>
+>- Delete an existing network: </br>
 `docker network rm <network_name>` </br>
 >- Check detail of a network: </br>
 `docker network inspect <network_name>` </br>
