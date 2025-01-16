@@ -8,5 +8,5 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 # 暴露應用的埠
 EXPOSE 3001
-# 啟動 Flask 應用
+# 啟動 FastAPI 應用
 CMD ["gunicorn", "-w", "4", "-k", "uvicorn.workers.UvicornWorker", "-b", "0.0.0.0:3001", "fastapi_app_file:app"]
