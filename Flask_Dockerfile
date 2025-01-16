@@ -9,4 +9,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 # 暴露應用的埠
 EXPOSE 3001
 # 啟動 Flask 應用
-CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:3001", "appfile:app"]
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:3001", "flask_app_file:app"]
