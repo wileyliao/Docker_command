@@ -8,12 +8,13 @@
 >- `<image_label>`: version, default = 'latest'
 >- `.`: current folder of Dockerfile
 
-## Push Image
+## Push/Pull Image
 `docker login` </br>
 `docker tag <local ImageName>:<local ImageTag> username/<remote ImageName>:<Remote ImageTag>` </br>
 >- or change `<local ImageName>:<local ImageTag>` to `<ImageID>` </br>
 
-`docker push username/<remote ImageName>:<Remote ImageTag>`
+`docker push username/<remote ImageName>:<Remote ImageTag>` </br>
+`docker pull username/<remote ImageName>:<Remote ImageTag>`
 
 ## Manage Container
 >- Run(create and start) a container </br>
