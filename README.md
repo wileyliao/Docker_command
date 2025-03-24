@@ -1,5 +1,8 @@
 # Docker Command Reference
 
+### before
+wsl --install ubuntu
+
 ## Build Image
 `docker build -t <image_name>:<image_label> .` 
 </br>
