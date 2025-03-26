@@ -48,3 +48,8 @@ wsl --install ubuntu
 `docker rmi <image_name>:<image_label>`
 >- Remove all unused resources: </br>
 `docker system prune`
+
+## Normal Command
+>- docker run -d --gpus all --name mma --restart always -p 3005:3001 -v C:\Projects\MMA\new:/app -v C:\result:/app_data mma:v1.0.0
+>- docker run -d --name nginx_http --network host -p 3005 -v C:\Projects\Nginx\http\nginx.conf:/etc/nginx/conf.d/default.conf:ro nginx:http
+>- docker run -d --gpus all --name mma --net mma -v C:\Projects\MMA\new:/app -v C:\result:/app_data mma:v1.0.0
